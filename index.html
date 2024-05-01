@@ -12,33 +12,37 @@
 <body>
     <div class="weather-deluxe">
    <header>
-    <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search"/>
+    <form id="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
     </form>
    </header>
 
 <main>
     
-<h1>
-    🌤21°C
-</h1>
-<h2>pretoria</h2>
+    <h1 class="weather-app">
+    <span class="weather-app-icon">
+🌤 </span> <span class= "weather-app-details">21°C</span>
+
+</h1 >
+    <h2 class="weather-app-city">pretoria</h2>
+    
 <p>
     <span>Sunday</span> 15:30
      <br/>
     scattered clouds 
     <br/>
-Humidity: 66% , windspeed: 33km/h
+    Humidity:<span class="details">66%</span> , windspeed:<span class="details">33km/h</span>
 </p>
 </main>
 
-   <footer>
+<footer>
     Coded by 
     <a href="https://github.com/ShantelKP" target="_blank">Shantel</a>
     hosted on <a href="https://github.com/ShantelKP/weather-deluxe" target="_blank">Github</a>
-website hosted on <a href="https://weather-deluxe.netlify.app/" target="_blank"> netlify</a>
-   </footer>
+    website hosted on <a href="https://weather-deluxe.netlify.app/" target="_blank"> netlify</a>
+</footer>
 </div>
+
 </body>
 </html>
