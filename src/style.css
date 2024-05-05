@@ -58,6 +58,11 @@ font-size: 68px;
     font-size: 50px;
 }
 
+.degrees{
+     color: #d54dc5;
+    font-size: 78px;
+}
+
 .weather-app-city{
     font-size: 58px;
     line-height: 48px;
