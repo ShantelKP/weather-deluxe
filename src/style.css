@@ -39,28 +39,34 @@ header{
 }
 .weather-app{
     text-align: center;
-    
+   
 }
 .weather-app-icon{
-font-size: 68px;
+width: 90px;
+height: 90px;
+padding-top: 15px;
+
 }
 .weather-app-details{
 
     text-align: center;
     color: #d54dc5;
-    font-size: 78px;
+    font-size: 68px;
     
 }
 
 .weather-app-temp{
-    text-align: center;
+text-align: center;
     color: #d54dc5;
     font-size: 50px;
+    line-height: 88px;
+    
 }
 
 .degrees{
      color: #d54dc5;
-    font-size: 78px;
+    font-size: 68px;
+    line-height: 88px;
 }
 
 .weather-app-city{

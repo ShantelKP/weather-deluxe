@@ -6,7 +6,10 @@ function refreshweather(response){
     let windspeedElement = document.querySelector("#windspeed");
     let timeElement = document.querySelector("#time");
     let date = new Date (response.data.time * 1000);
+    let iconElement =document.querySelector("#icon");
+console.log(response.data.condition.icon_url);
 
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" /> `;
     forecastElement.innerHTML = response.data.condition.description;
     temperatureElement.innerHTML = Math.round(temperature);
     detailsElement.innerHTML = response.data.temperature.humidity;
@@ -45,5 +48,5 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit",handleSearchSubmit);
 
-searchCity("");
+searchCity("pretoria");
 
