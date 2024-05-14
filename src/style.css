@@ -73,11 +73,30 @@ text-align: center;
     font-size: 58px;
     line-height: 48px;
 }
+.weather-forecast-day{
+font-size: larger;
+color: #d54dc5;
+}
+
+.weather-forecast-temperatures{
+text-align: center;
+color: black;
+}
+
+.weather-forecast-icon{
+    text-align: end;
+   
+
+}
+
+.weather-forecast-temperature{
+    text-align: end;
+    color: black;
+}
 
 p{
 font-size: 20px;
 line-height: 28px;
-
 
 }
 

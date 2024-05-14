@@ -20,7 +20,7 @@ console.log(response.data.condition.icon_url);
 function formatdate(date) {
     let minutes = date.getMinutes();
     let hours = date.getHours();
-    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     let day = days[date.getDay()];
     if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -35,7 +35,6 @@ function searchCity(city) {
 
 }
 
-
 function handleSearchSubmit(event) {
     event.preventDefault();
     let searchInput = document.querySelector ("#search-text-input");
@@ -44,9 +43,39 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
-
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit",handleSearchSubmit);
 
+function displayForecasting(){
+    
+    
+    let days = ["Tue", "Wed", "Thur"];
+    let forecastingHtml = "";
+    days.forEach(function (day) {
+        
+        forecastingHtml = forecastingHtml +  `
+        <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-temperatures">
+        <div class="weather-forecast-temperature">
+        <strong>15°</strong></div>
+        </div>
+        <div class="weather-forecast-temperature">9°</div>
+        </div>
+        <div class="weather-forecast-icon">☀</div>
+    
+        </div>
+        `;
+    
+});
+let forecastingElement = document.querySelector("#forecasting");
+forecastingElement.innerHTML = forecastingHtml;
+}
 searchCity("pretoria");
+displayForecasting();
 
+
+
+   
+
+ 
