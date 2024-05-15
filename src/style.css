@@ -84,13 +84,13 @@ color: black;
 }
 
 .weather-forecast-icon{
-    text-align: end;
+    text-align: center;
    
 
 }
 
 .weather-forecast-temperature{
-    text-align: end;
+    text-align: center;
     color: black;
 }
 

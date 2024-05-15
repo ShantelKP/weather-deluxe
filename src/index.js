@@ -16,6 +16,8 @@ console.log(response.data.condition.icon_url);
     windspeedElement.innerHTML = response.data.wind.speed;
     timeElement.innerHTML = formatdate(date);
 
+    getforecasting(response.data.city);
+
 }
 function formatdate(date) {
     let minutes = date.getMinutes();
@@ -46,8 +48,8 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit",handleSearchSubmit);
 
-function displayForecasting(){
-    
+function displayForecasting(response){
+    console.log(response.data);
     
     let days = ["Tue", "Wed", "Thur"];
     let forecastingHtml = "";
@@ -71,8 +73,17 @@ function displayForecasting(){
 let forecastingElement = document.querySelector("#forecasting");
 forecastingElement.innerHTML = forecastingHtml;
 }
+
+
+function getforecasting(city) {
+    let apiKey = "t747cb5b53edd3a43fa908f29cfeo25a";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+axios(apiUrl).then(displayForecasting);
+}
+
 searchCity("pretoria");
 displayForecasting();
+
 
 
 
