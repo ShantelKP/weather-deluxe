@@ -69,37 +69,20 @@ text-align: center;
     line-height: 88px;
 }
 
-.weather-app-city{
-    font-size: 58px;
-    line-height: 48px;
-}
-.weather-forecast-day{
-font-size: larger;
-color: #d54dc5;
+
+
+p{
+    font-size: 20px;
+    line-height: 28px;
+    
 }
 
 .weather-forecast-temperatures{
-text-align: center;
-color: black;
+    font-size: 14px;
 }
-
-.weather-forecast-icon{
-    text-align: center;
-   
-
+.weather-forecast-temperature-max{
+    font-weight: bold;
 }
-
-.weather-forecast-temperature{
-    text-align: center;
-    color: black;
-}
-
-p{
-font-size: 20px;
-line-height: 28px;
-
-}
-
 footer{
     border-top: 1px solid #c193f2;
     padding: 30px 0 0 0;
